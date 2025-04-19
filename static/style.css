@@ -1,0 +1,42 @@
+body {
+    background: #111;
+    color: #0f0;
+    font-family: monospace;
+    padding: 20px;
+}
+
+h1 {
+    color: #00f7ff;
+    animation: flicker 1.5s infinite alternate;
+}
+
+a {
+    color: #0ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ff0;
+    text-shadow: 0 0 5px #ff0;
+}
+
+input {
+    background: #222;
+    border: 1px solid #0f0;
+    padding: 5px;
+    color: #0f0;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
