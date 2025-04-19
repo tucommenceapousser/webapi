@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Détails modèle {{ model_id }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Infos pour {{ model_id }}</h1>
+    <pre>{{ info | tojson(indent=2) }}</pre>
+    <p><a href="/">← Retour</a></p>
+</body>
+</html>
